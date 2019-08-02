@@ -9,7 +9,7 @@ var guesses=9;
 
 // Game Components
 // click event
-
+var userGuess = event.key;
 // for loop iterating on number of guesses left
 
 // if for win
