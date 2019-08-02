@@ -5,6 +5,17 @@ var computerChoices = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l
 // Count Variables
 var wins=0;
 var losses=0;
-var guesses=0;
+var guesses=9;
 
 // Game Components
+// click event
+
+// for loop iterating on number of guesses left
+
+// if for win
+
+// if for loss
+
+// if to to subtract from guess
+
+// if to reset guesses and starts next round
