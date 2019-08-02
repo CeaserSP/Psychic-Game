@@ -14,13 +14,15 @@ var userGuess = event.key;
 var computerGuess= computerChoices[Math.floor(Math.random()*computerChoices.length) ];
 // for loop iterating on number of guesses left
 for (var i=0;i<=9;i++){
-// if for win
+// if for win and new round
 if(userGuess === computerGuess){
-    
+    wins++;
+    guesses = 9
 }
-// if for loss
+// if for losses and new round
+if(guesses === 0){
+losses++
+guesses =9
+}
 
-// if to to subtract from guess
-
-// if to reset guesses and starts next round
 }
