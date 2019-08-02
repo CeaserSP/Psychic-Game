@@ -6,6 +6,11 @@ var computerChoices = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l
 var wins=0;
 var losses=0;
 var guesses=9;
+// append to html
+var wText = document.createTextNode("Wins: ")
+var lText = document.createTextNode("Losses: ")
+var gText = document.createTextNode("Guesses: ")
+
 
 // Game Components
 // click event
@@ -24,5 +29,7 @@ if(guesses === 0){
 losses++
 guesses =9
 }
+// display wins, losses, and guesses left
+document.getElementById("w").textContent;
 
 }
