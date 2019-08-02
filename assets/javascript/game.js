@@ -31,5 +31,6 @@ guesses =9
 }
 // display wins, losses, and guesses left
 document.getElementById("w").textContent;
+w.appendChild(wText+wins)
 
 }
