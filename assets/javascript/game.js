@@ -33,4 +33,10 @@ guesses =9
 document.getElementById("w").textContent;
 w.appendChild(wText+wins)
 
+document.getElementById("l").textContent;
+l.appendChild(lText+losses)
+
+document.getElementById("g").textContent;
+g.appendChild(gText+guesses)
+
 }
