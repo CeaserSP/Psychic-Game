@@ -22,12 +22,16 @@ for (var i=0;i<=9;i++){
 // if for win and new round
 if(userGuess === computerGuess){
     wins++;
-    guesses = 9
+    guesses = 9;
 }
 // if for losses and new round
 if(guesses === 0){
-losses++
-guesses =9
+losses++;
+guesses =9;
+}
+// if for guesses count down
+if(userGuess != computerGuess){
+    guesses--;
 }
 // display wins, losses, and guesses left
 document.getElementById("w").textContent;
