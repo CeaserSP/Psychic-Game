@@ -3,12 +3,13 @@ var computerChoices = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l
 "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 
 // Count Variables
-var wins=0;
-console.log(wins);
+var wins = 0;
+// console.log(wins);
 var losses=0;
 var guesses=9;
 // variables to display text
-var winsText = document.getElementById("w");
+var winsText = document.getElementById('w');
+// console.log('winsText', winsText)
 var lossesText = document.getElementById("l");
 var guessesText = document.getElementById("g");
 // This function is run whenever the user presses a key.
@@ -36,9 +37,10 @@ if(userGuess != computerGuess){
     guesses--;
 }
 // display wins, losses, and guesses left
-winsText.textContent = "wins: " + wins;
+// console.log('wins', wins);
+winsText.innerHTML = "wins: " + wins;
 lossesText.textContent = "losses: " + losses;
-guessesText.textContent = "ties: " + guesses;
+guessesText.textContent = "guesses: " + guesses;
 
 // }
 };
