@@ -18,6 +18,7 @@ var userText = document.getElementById("uG");
 document.onkeyup = function(event) {
 // Game Components
 // click event
+
 var userGuess = event.key;
 // console.log(userGuess);
 // computer guess
@@ -29,24 +30,26 @@ if(userGuess === computerGuess){
     wins++;
     guesses = 10;
     userSelect = [];
+    alert("You win! Play again?")
 }
 // if for losses and new round
 if(guesses === 1){
 losses++;
-guesses =10;
-userSelect.push(userGuess);
+guesses = 10;
+userSelect=[];
+alert("You lose! The letter was: " + computerGuess + " Play again?")
 }
 // if for guesses count down
 if(userGuess != computerGuess){
     guesses--;
-    userSelect=[];
+    userSelect.push(userGuess);
 }
 // display wins, losses, and guesses left
 // console.log('wins', wins);
 winsText.innerHTML = "Wins: " + wins;
 lossesText.textContent = "Losses: " + losses;
 guessesText.textContent = "Guesses Left: " + guesses;
-userText.textContent = "Your Guesses So Far: " + userSelect;
+userText.textContent = "Your Guesses So Far: " + userSelect.join(", ");
 
 // }
 };
