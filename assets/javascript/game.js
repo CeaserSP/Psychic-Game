@@ -10,7 +10,6 @@ var guesses=10;
 var userSelect=[];
 // variables to display text
 var winsText = document.getElementById('w');
-// console.log('winsText', winsText)
 var lossesText = document.getElementById("l");
 var guessesText = document.getElementById("g");
 var userText = document.getElementById("uG");
@@ -18,13 +17,9 @@ var userText = document.getElementById("uG");
 document.onkeyup = function(event) {
 // Game Components
 // click event
-
 var userGuess = event.key;
-// console.log(userGuess);
 // computer guess
 var computerGuess= computerChoices[Math.floor(Math.random()*computerChoices.length)];
-// for loop iterating on number of guesses left
-// for (var i=0;i<=9;i++){
 // if for win and new round
 if(userGuess === computerGuess){
     wins++;
@@ -45,7 +40,6 @@ if(userGuess != computerGuess){
     userSelect.push(userGuess);
 }
 // display wins, losses, and guesses left
-// console.log('wins', wins);
 winsText.innerHTML = "Wins: " + wins;
 lossesText.textContent = "Losses: " + losses;
 guessesText.textContent = "Guesses Left: " + guesses;
