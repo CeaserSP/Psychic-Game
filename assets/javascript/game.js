@@ -12,12 +12,13 @@ var winsText = document.getElementById('w');
 // console.log('winsText', winsText)
 var lossesText = document.getElementById("l");
 var guessesText = document.getElementById("g");
+var userText = document.getElementById("ug");
 // This function is run whenever the user presses a key.
 document.onkeyup = function(event) {
 // Game Components
 // click event
 var userGuess = event.key;
-console.log(userGuess);
+// console.log(userGuess);
 // computer guess
 var computerGuess= computerChoices[Math.floor(Math.random()*computerChoices.length)];
 // for loop iterating on number of guesses left
@@ -41,6 +42,7 @@ if(userGuess != computerGuess){
 winsText.innerHTML = "wins: " + wins;
 lossesText.textContent = "losses: " + losses;
 guessesText.textContent = "guesses: " + guesses;
+userText.textContent = "Your guesses so far: " + userGuess;
 
 // }
 };
