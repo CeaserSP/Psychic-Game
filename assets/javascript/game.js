@@ -11,7 +11,8 @@ var wText = document.createTextNode("Wins: ")
 var lText = document.createTextNode("Losses: ")
 var gText = document.createTextNode("Guesses: ")
 
-
+// This function is run whenever the user presses a key.
+document.onkeyup = function(event) {
 // Game Components
 // click event
 var userGuess = event.key;
@@ -44,3 +45,4 @@ document.getElementById("g").textContent;
 g.appendChild(gText+guesses)
 
 }
+};
