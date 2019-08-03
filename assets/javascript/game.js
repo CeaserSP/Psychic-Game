@@ -4,19 +4,21 @@ var computerChoices = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l
 
 // Count Variables
 var wins=0;
+console.log(wins);
 var losses=0;
 var guesses=9;
 // variables to display text
-var winsText = document.getElementById("wins-text");
-var lossesText = document.getElementById("losses-text");
-var guessesText = document.getElementById("guesses-text");
+var winsText = document.getElementById("w");
+var lossesText = document.getElementById("l");
+var guessesText = document.getElementById("g");
 // This function is run whenever the user presses a key.
 document.onkeyup = function(event) {
 // Game Components
 // click event
 var userGuess = event.key;
+console.log(userGuess);
 // computer guess
-var computerGuess= computerChoices[Math.floor(Math.random()*computerChoices.length) ];
+var computerGuess= computerChoices[Math.floor(Math.random()*computerChoices.length)];
 // for loop iterating on number of guesses left
 // for (var i=0;i<=9;i++){
 // if for win and new round
@@ -34,14 +36,9 @@ if(userGuess != computerGuess){
     guesses--;
 }
 // display wins, losses, and guesses left
-document.getElementById("w").textContent;
-w.appendChild(wText+wins)
+winsText.textContent = "wins: " + wins;
+lossesText.textContent = "losses: " + losses;
+guessesText.textContent = "ties: " + guesses;
 
-document.getElementById("l").textContent;
-l.appendChild(lText+losses)
-
-document.getElementById("g").textContent;
-g.appendChild(gText+guesses)
-
-}
+// }
 };
