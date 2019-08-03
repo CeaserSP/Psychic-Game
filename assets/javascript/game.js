@@ -6,11 +6,10 @@ var computerChoices = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l
 var wins=0;
 var losses=0;
 var guesses=9;
-// append to html
-var wText = document.createTextNode("Wins: ")
-var lText = document.createTextNode("Losses: ")
-var gText = document.createTextNode("Guesses: ")
-
+// variables to display text
+var winsText = document.getElementById("wins-text");
+var lossesText = document.getElementById("losses-text");
+var guessesText = document.getElementById("guesses-text");
 // This function is run whenever the user presses a key.
 document.onkeyup = function(event) {
 // Game Components
