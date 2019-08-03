@@ -1,3 +1,10 @@
-body{
+html{
     background-image: url("https://cdn5.vectorstock.com/i/1000x1000/20/99/magic-8-ball-eight-isolated-vector-21312099.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+body{
+    background-color: aliceblue;
+    text-align: center;
+    opacity: .5;
 }
