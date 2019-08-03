@@ -1,10 +1,15 @@
 html{
-    background-image: url("https://cdn5.vectorstock.com/i/1000x1000/20/99/magic-8-ball-eight-isolated-vector-21312099.jpg");
-    background-repeat: no-repeat;
-    background-size: 100%;
-}
-body{
+    height: 100%;
     background-color: aliceblue;
+    background-image: url("https://cdn.shopify.com/s/files/1/0036/2011/0406/products/product-image-793334840_2000x.jpg?v=1547252672");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.display{
+    background-color: gray;
+    color: black;
     text-align: center;
-    opacity: .5;
+    
+    
 }
